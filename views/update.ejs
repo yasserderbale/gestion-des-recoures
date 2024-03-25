@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<section  id="navbar1">
+    <form   action="/update/<%= Array._id %> ?_method=PUT" method="post"  class="mx-0 row gx-3 gy-4 mt-3"  id="insert">
+      <h1>STUDENT</h1>
+      <div class="tot">
+            <div class="premier">
+            <div class="col-md-12">
+              <label for="inputfirstName4" class="form-label"> Nome</label>
+              <input name="Nome"
+              value="<%= Array.Nome %>"
+                placeholder=""
+                type="text"
+                class="form-control"
+                id="Nome"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="inputlastName4" class="form-label">Prenome</label>
+              <input name="Prenome"
+              value="<%= Array.Prenome %>"
+
+                placeholder=""
+                type="text"
+                class="form-control me-2"
+                id="Prenome"
+              />
+      
+            </div>
+          </div>
+      
+      
+      
+          <div class="dexieme">
+            <div class="col-md-12">
+              <label for="inputemail4" class="form-label">Email</label>
+              <input name="Email"
+              value="<%= Array.Email %>"
+
+                placeholder=""
+                type="email"
+                class="form-control"
+                id="Email"
+              />
+      
+            </div>
+              <div class="col-md-12">
+                <label for="inputemail4" class="form-label">groupe</label>
+                <select id="inputCountry" class="form-select" name="groupe"               value="<%= Array.groupe %>"
+                    >
+                  <option selected hidden disabled></option>
+      
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+      
+                </select>
+
+              </div>
+            </div>
+      
+          </div>
+          <h1>Recours</h1>
+      
+          <div class="tot">
+            <div class="premier">
+              <div class="col-md-12">
+                <label for="inputemail4" class="form-label"> module</label>
+                <select id="inputCountry" class="form-select" name="module"              value="<%= Array.module %>"
+                    >
+                  <option selected hidden disabled></option>
+      
+                  <option>ASI</option>
+                  <option>SAD</option>
+                  <option>SID</option>
+                  <option>GL</option>
+                  <option>IHM</option>
+                  <option>ANG</option>
+                  <option>PAW</option>
+      
+      
+                </select>
+
+              </div>
+              <div class="col-md-12">
+                <label for="inputlastName4" class="form-label">nature</label>
+                <select id="inputCountry" class="form-select" name="nature"              value="<%= Array.nature %>"
+                    >
+                  <option selected hidden disabled></option>
+      
+                  <option>CC</option>
+                  <option>Examen</option>
+      
+      
+                </select>
+
+        
+              </div>
+            </div>
+        
+        
+        
+            <div class="dexieme">
+              <div class="col-md-12">
+                <label for="inputemail4" class="form-label">note afiches</label>
+                <input name="noteafiches"
+                value="<%= Array.noteafiches %>"
+
+                placeholder=""
+                type="number"
+                class="form-control"
+                id="noteafiches"
+                   />
+
+              </div>
+                <div class="col-md-12">
+                  <label for="inputemail4" class="form-label">note reel</label>
+                  <input name="notereel"
+                  value="<%= Array.notereel %>"
+
+                  placeholder=""
+                  type="number"
+                  class="form-control"
+                  id="notereel"
+                     />
+
+                </div>
+              </div>
+      
+      
+      
+          </div>
+      
+          
+              <div class="col-xxl-2">
+                <button   style=
+                
+                "
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 26px;
+
+                 width: 250%;
+                -bs-btn-color: #f57d7d;
+                --bs-btn-bg: #4d3434;
+                --bs-btn-border-color: #0e1012;
+                --bs-btn-hover-color: #b13131;
+                --bs-btn-hover-bg: #0b5ed7;
+                --bs-btn-hover-border-color: #0a58ca;
+                --bs-btn-focus-shadow-rgb: 49,132,253;
+                --bs-btn-active-color: #724d4d;
+                --bs-btn-active-bg: #0a58ca;
+                --bs-btn-active-border-color: #0a53be;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #682929;
+                --bs-btn-disabled-bg: #0d6efd;
+                --bs-btn-disabled-border-color: #0d6efd;" type="submit" class="btn btn-primary alert-danger">update</button>
+      
+              </div>
+    </form>
+  </section>
+</body>
