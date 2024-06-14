@@ -2,6 +2,6 @@
 ## tapez dans ton terminale
 `npm install`
 ## pour lancer le projet tapez
-`node app.js`
+`node index.js`
 
 
